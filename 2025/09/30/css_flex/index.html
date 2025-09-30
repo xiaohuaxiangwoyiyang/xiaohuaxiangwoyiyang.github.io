@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Flex | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="1. flexBasisflexBasis 定义了 Flex 项目在主轴方向上分配多余空间之前（或者在空间不足时收缩之前）的初始大小flex-basis 的常用值 auto (默认值)意思是“请参考我的 width 或 height 属性”。 如果项目没有设置 width&#x2F;height，则大小由项目的内容决定（内容撑开）。 长度值 (如 100px, 20%, 10em)直接设置一个固定">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Flex">
+<meta property="og:url" content="https://xiaohuaxiangwoyiyang.github.io/2025/09/30/css_flex/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1. flexBasisflexBasis 定义了 Flex 项目在主轴方向上分配多余空间之前（或者在空间不足时收缩之前）的初始大小flex-basis 的常用值 auto (默认值)意思是“请参考我的 width 或 height 属性”。 如果项目没有设置 width&#x2F;height，则大小由项目的内容决定（内容撑开）。 长度值 (如 100px, 20%, 10em)直接设置一个固定">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-09-30T02:53:09.115Z">
+<meta property="article:modified_time" content="2025-09-30T07:11:09.746Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://xiaohuaxiangwoyiyang.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-css_flex" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/09/30/css_flex/" class="article-date">
+  <time class="dt-published" datetime="2025-09-30T02:53:09.115Z" itemprop="datePublished">2025-09-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Flex
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="1-flexBasis"><a href="#1-flexBasis" class="headerlink" title="1. flexBasis"></a>1. flexBasis</h2><p>flexBasis 定义了 Flex 项目在主轴方向上分配多余空间之前（或者在空间不足时收缩之前）的初始大小<br>flex-basis 的常用值</p>
+<h4 id="auto-默认值"><a href="#auto-默认值" class="headerlink" title="auto (默认值)"></a>auto (默认值)</h4><p>意思是“请参考我的 width 或 height 属性”。</p>
+<p>如果项目没有设置 width&#x2F;height，则大小由项目的内容决定（内容撑开）。</p>
+<h4 id="长度值-如-100px-20-10em"><a href="#长度值-如-100px-20-10em" class="headerlink" title="长度值 (如 100px, 20%, 10em)"></a>长度值 (如 100px, 20%, 10em)</h4><p>直接设置一个固定的基准尺寸。例如 flex-basis: 200px 意味着项目的初始大小为 200 像素。</p>
+<h4 id="content"><a href="#content" class="headerlink" title="content"></a>content</h4><p>根据项目的内容自动决定大小，完全忽略 width &#x2F; height 属性。这在你希望尺寸完全由内容决定时非常有用。</p>
+<h4 id="0"><a href="#0" class="headerlink" title="0"></a>0</h4><p>将项目的初始大小设置为 0。这意味着所有的空间（无论是正还是负）都将由 flex-grow 和 flex-shrink 来分配。这在实现等分布局时非常常用。<br>flexBasis 主要控制主轴方向的尺寸（在水平布局中是宽度）。但固定高度影响的是：<br>视觉体验：固定高度的子元素在父容器变小时可能溢出或显示异常<br>布局稳定性：响应式高度让整个面板更协调地调整<br>用户体验：当面板宽度变化时，用户期望看到所有内容都相应调整<br>修改为 height: 100% 的主要好处是：<br>子元素会完全适应父容器的尺寸变化<br>视觉上更一致和流畅<br>避免了固定尺寸可能带来的布局问题<br>所以虽然固定高度不会直接”阻止” flexBasis 工作，但会影响整体的用户体验和视觉效果。</p>
+<h2 id="2-max-height-390px-导致按钮元素移除屏幕外的原因是："><a href="#2-max-height-390px-导致按钮元素移除屏幕外的原因是：" class="headerlink" title="2. max-height: 390px 导致按钮元素移除屏幕外的原因是："></a>2. max-height: 390px 导致按钮元素移除屏幕外的原因是：</h2><p>Flexbox 布局冲突：.comment 区域设置了 flex: 1，会尽可能占据空间<br>内容溢出：当评论内容（特别是图片）过多时，会超出 max-height 限制<br>父容器限制：父容器设置了 overflow-y: hidden，导致被压缩的底部区域不可见<br>解决方案：<br>给 .comment 添加 min-height: 0 和 overflow-y: auto，让内容区域可以滚动<br>给 .footer 添加 flex-shrink: 0，防止按钮区域被压缩</p>
+<h2 id="3-一个需求，在大屏幕上一行显示，在小屏幕上两行显示，如何做？"><a href="#3-一个需求，在大屏幕上一行显示，在小屏幕上两行显示，如何做？" class="headerlink" title="3. 一个需求，在大屏幕上一行显示，在小屏幕上两行显示，如何做？"></a>3. 一个需求，在大屏幕上一行显示，在小屏幕上两行显示，如何做？</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">.box &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    align-items: center;</span><br><span class="line">    justify-content: space-between;</span><br><span class="line">    gap: 8px;</span><br><span class="line">    </span><br><span class="line">    // 小屏幕：分两行显示，左对齐和右对齐</span><br><span class="line">    @media (max-width: 1620px) &#123;</span><br><span class="line">      flex-direction: column;</span><br><span class="line">      align-items: stretch;</span><br><span class="line">      gap: 8px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &amp;-title-left &#123;</span><br><span class="line">        display: flex;</span><br><span class="line">        align-items: center;</span><br><span class="line">        gap: 8px;</span><br><span class="line">        </span><br><span class="line">        // 小屏幕：左对齐</span><br><span class="line">        @media (max-width: 1620px) &#123;</span><br><span class="line">            justify-content: flex-start;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &amp;-title-right &#123;</span><br><span class="line">        display: flex;</span><br><span class="line">        align-items: center;</span><br><span class="line">        gap: 8px;</span><br><span class="line">        </span><br><span class="line">        // 小屏幕：右对齐</span><br><span class="line">        @media (max-width: 1620px) &#123;</span><br><span class="line">           justify-content: flex-end;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="工作原理："><a href="#工作原理：" class="headerlink" title="工作原理："></a>工作原理：</h3><p>大屏幕时：父容器使用 justify-content: space-between，自动将 title-left 推到最左边，title-right 推到最右边<br>小屏幕时：<br>父容器改为 flex-direction: column（垂直排列）<br>title-left 使用 justify-content: flex-start（左对齐）<br>title-right 使用 justify-content: flex-end（右对齐）</p>
+<h3 id="align-items-stretch-的含义"><a href="#align-items-stretch-的含义" class="headerlink" title="align-items: stretch 的含义"></a>align-items: stretch 的含义</h3><p>align-items: stretch 是 CSS Flexbox 布局中的一个属性，用于控制交叉轴（垂直于主轴）上子元素的排列方式。<br>具体作用：<br>拉伸子元素：让所有子元素在交叉轴方向上拉伸到父容器的完整高度<br>默认行为：这是 align-items 的默认值，当没有显式设置时，子元素会自动拉伸</p>
+<p>在这个代码上下文中的作用：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 小屏幕：分两行显示，左对齐和右对齐</span><br><span class="line">// @media (max-width: 1620px) &#123;</span><br><span class="line">//     flex-direction: column;        // 改为垂直排列</span><br><span class="line">//     align-items: stretch;          // 子元素拉伸到容器宽度</span><br><span class="line">//     gap: 8px;</span><br><span class="line">// &#125;</span><br></pre></td></tr></table></figure>
+<p>当屏幕宽度小于 1620px 时：<br>flex-direction: column 将布局从水平改为垂直<br>align-items: stretch 确保 title-left 和 title-right 两个子元素都拉伸到容器的完整宽度</p>
+<p>觉效果对比：<br>不使用 stretch（默认 flex-start）：<br>┌─────────────────┐<br>│ [title-left]    │  ← 只占用内容宽度<br>│           [right]│  ← 只占用内容宽度<br>└─────────────────┘</p>
+<p>使用 stretch：<br>┌─────────────────┐<br>│ [title-left    ]│  ← 拉伸到完整宽度<br>│ [        right ]│  ← 拉伸到完整宽度<br>└─────────────────┘</p>
+<p>实际意义：<br>在这个响应式设计中，stretch 确保了在小屏幕下，左右两个区域都能充分利用可用空间，提供更好的视觉平衡和用户体验</p>
+<h2 id="什么是-flex-shrink？"><a href="#什么是-flex-shrink？" class="headerlink" title="什么是 flex-shrink？"></a>什么是 flex-shrink？</h2><p>flex-shrink 是 Flexbox 布局中的一个属性，用于控制当 Flex 容器空间不足时，Flex 项目如何收缩。它决定了项目在空间不够时的”收缩意愿”。</p>
+<h4 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h4><ul>
+<li><p>作用时机：只在 Flex 容器空间不足时生效</p>
+</li>
+<li><p>默认值：1（允许收缩）</p>
+</li>
+<li><p>取值：数字（通常是非负整数），数值越大收缩得越多</p>
+</li>
+<li><p>工作原理：项目根据其 flex-shrink 值和 flex-basis 的乘积权重来按比例收缩</p>
+</li>
+</ul>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><ul>
+<li><p>flex-shrink 是控制 Flex 项目收缩行为的关键属性：</p>
+</li>
+<li><p>flex-shrink: 0：禁止收缩，保持基准大小</p>
+</li>
+<li><p>flex-shrink: 1：默认值，允许等比例收缩</p>
+</li>
+<li><p>flex-shrink: &gt;1：收缩意愿更强，会比普通项目收缩更多</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaohuaxiangwoyiyang.github.io/2025/09/30/css_flex/" data-id="cmg678sg80000ejo4enr581m0" data-title="Flex" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2025/09/30/typescript/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2025/09/30/project_splitPanel/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">面板分割及拖拽</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/09/30/project_div/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2025/09/30/typescript/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2025/09/30/css_flex/">Flex</a>
+          </li>
+        
+          <li>
+            <a href="/2025/09/30/project_splitPanel/">面板分割及拖拽</a>
+          </li>
+        
+          <li>
+            <a href="/2025/09/29/vue3_reactive/">响应式</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="typescript1. ! 非空断言感叹号 ! 的含义： 非空断言操作符：告诉 TypeScript “我确定这个值不是 null 或 undefined”跳过类型检查：强制编译器忽略可能的空值警告运行时不做任何事情：只是编译时的类型断言 为什么之前需要 !：API 返回类型是 string | null即使有 if (data) 检查，TypeScript 有时仍认为可能是 null使用 !">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://xiaohuaxiangwoyiyang.github.io/2025/09/30/typescript/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="typescript1. ! 非空断言感叹号 ! 的含义： 非空断言操作符：告诉 TypeScript “我确定这个值不是 null 或 undefined”跳过类型检查：强制编译器忽略可能的空值警告运行时不做任何事情：只是编译时的类型断言 为什么之前需要 !：API 返回类型是 string | null即使有 if (data) 检查，TypeScript 有时仍认为可能是 null使用 !">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-09-30T03:38:03.923Z">
+<meta property="article:modified_time" content="2025-09-30T06:45:52.320Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://xiaohuaxiangwoyiyang.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-typescript" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/09/30/typescript/" class="article-date">
+  <time class="dt-published" datetime="2025-09-30T03:38:03.923Z" itemprop="datePublished">2025-09-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="typescript"><a href="#typescript" class="headerlink" title="typescript"></a>typescript</h2><h3 id="1-非空断言"><a href="#1-非空断言" class="headerlink" title="1. ! 非空断言"></a>1. ! 非空断言</h3><p>感叹号 ! 的含义：</p>
+<h4 id="非空断言操作符：告诉-TypeScript-“我确定这个值不是-null-或-undefined”"><a href="#非空断言操作符：告诉-TypeScript-“我确定这个值不是-null-或-undefined”" class="headerlink" title="非空断言操作符：告诉 TypeScript “我确定这个值不是 null 或 undefined”"></a>非空断言操作符：告诉 TypeScript “我确定这个值不是 null 或 undefined”</h4><p>跳过类型检查：强制编译器忽略可能的空值警告<br>运行时不做任何事情：只是编译时的类型断言</p>
+<h4 id="为什么之前需要-："><a href="#为什么之前需要-：" class="headerlink" title="为什么之前需要 !："></a>为什么之前需要 !：</h4><p>API 返回类型是 string | null<br>即使有 if (data) 检查，TypeScript 有时仍认为可能是 null<br>使用 ! 强制告诉编译器这里不会是 null</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// ❌ 使用感叹号（不推荐）</span><br><span class="line">params.value.selected = JSON.parse(data!)</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// ✅ 更安全的方式（推荐）</span><br><span class="line"><span class="keyword">if</span> (data) &#123;</span><br><span class="line">    try &#123;</span><br><span class="line">        params.value.selected = JSON.parse(data)</span><br><span class="line">    &#125; catch (error) &#123;</span><br><span class="line">        console.error(<span class="string">&#x27;解析配置数据失败:&#x27;</span>, error)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaohuaxiangwoyiyang.github.io/2025/09/30/typescript/" data-id="cmg678sgl0002ejo457fsczyx" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2025/09/30/project_div/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2025/09/30/css_flex/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Flex</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/09/30/project_div/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2025/09/30/typescript/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2025/09/30/css_flex/">Flex</a>
+          </li>
+        
+          <li>
+            <a href="/2025/09/30/project_splitPanel/">面板分割及拖拽</a>
+          </li>
+        
+          <li>
+            <a href="/2025/09/29/vue3_reactive/">响应式</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
